@@ -1,6 +1,7 @@
 # LaTeX Beamer Accessibility Template
 
-NOTE: Please do not fork. Create a new template. 
+> **NOTE**: Please do not fork. Create a new template. 
+> ![screenshot showing how to create a template](misc/template.png)
 
 This is a simple template to make your LaTeX Beamer slides accessible (tagged document structure, etc.)
 
