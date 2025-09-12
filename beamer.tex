@@ -1,0 +1,44 @@
+\DocumentMetadata{
+  pdfversion=1.7,
+  pdfstandard=ua-1,  % optional, for PDF/UA compliance
+  lang=en-US,
+}
+
+\documentclass{beamer}
+
+\usepackage{graphicx}
+\usepackage{tagpdf}
+\tagpdfsetup{activate-all}
+
+
+% Load hyperref *after* DocumentMetadata, without duplicate metadata options
+\usepackage{hyperref}
+% Commands for beginning and ending marked content with MCID
+\hypersetup{
+  pdftitle={DOCUMENT TITLE - CHANGE THIS},
+  pdfauthor={YOUR NAME - CHANGE THIS}
+}
+
+\begin{document}
+
+\begin{frame}
+
+\tagstructbegin{tag=H1}
+	\frametitle{SLIDE TITLE}
+\tagstructend
+
+\vspace{1em}
+
+\tagstructbegin{tag=Figure}
+	\includegraphics[width=0.7\textwidth]{test.png}
+\tagstructend
+
+\vspace{1em}
+
+\tagstructbegin{tag=P}
+	SOME TEXT (paragraph)
+\tagstructend
+
+\end{frame}
+
+\end{document}
