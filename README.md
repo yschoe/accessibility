@@ -1,5 +1,7 @@
 # LaTeX Beamer Accessibility Template
 
+NOTE: Please do not fork. Create a new template. 
+
 This is a simple template to make your LaTeX Beamer slides accessible (tagged document structure, etc.)
 
 You need `lualatex` to compile it. You need the latest version of `texlive` (I had to upgrade my Ubuntu distribution to the latest LTS).
