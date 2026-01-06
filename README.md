@@ -21,5 +21,8 @@ You can redefine some beamer commands to avoid manually tagging.
 }
 ```
 
+
 You can check how it works, and easily adapt to regular LaTeX documents (e.g., redefine `\section` to tag it as H1). This way, you only need to edit the preamble.
+
+See `article.tex` for example.
 
