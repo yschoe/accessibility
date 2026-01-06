@@ -1,0 +1,38 @@
+\DocumentMetadata{
+  pdfversion=1.7,
+  pdfstandard=ua-1,  % optional, for PDF/UA compliance
+  lang=en-US,
+}
+
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{tagpdf}
+\tagpdfsetup{activate-all}
+
+
+% Load hyperref *after* DocumentMetadata, without duplicate metadata options
+\usepackage{hyperref}
+% Commands for beginning and ending marked content with MCID
+\hypersetup{
+  pdftitle={DOCUMENT TITLE - CHANGE THIS},
+  pdfauthor={YOUR NAME - CHANGE THIS}
+}
+
+
+%redefine macros to add tag
+\let\oldsection\section
+\renewcommand{\section}[1]{
+  \tagstructbegin{tag=H1}
+         \oldsection{#1}
+  \tagstructend
+}
+
+\begin{document}
+% put your text here 
+\section{Introduction}
+\section{Equations}
+Testing equations:
+\[ x = \sqrt{y} \frac{x}{z} \]
+\end{document}
+
